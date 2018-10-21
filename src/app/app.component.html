@@ -1,0 +1,110 @@
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-expand-lg">
+					<a class="navbar-brand" href="/"><img src="assets/images/logo-topo.png" alt="logo certifis do lago"></a>
+
+					<div class="collapse navbar-collapse menu-principal ml-auto" id="navbarTogglerDemo02">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a href="/">Início</a>
+								<!--ul class="submenu">
+									<li><a [routerLink]="'parque-aquatico'">Parque Aquático</a></li>
+									<li><a [routerLink]="'acomodacoes'">Acomodações</a></li>
+									<li><a [routerLink]="'gastronomia'">Gastronomia</a></li>
+									<li><a [routerLink]="'lago-corumba'">Lago Corumbá</a></li>
+								</ul-->
+							</li>
+							<li class="nav-item">
+								<a [routerLink]="'empresa'">A Empresa</a>
+							</li>
+							<li class="nav-item">
+								<a [routerLink]="'solucoes'">Soluções</a>
+							</li>
+							<li class="nav-item">
+								<a [routerLink]="'pontos-atendimento'">Pontos de Atendimento</a>
+							</li>
+							<li class="nav-item">
+								<a [routerLink]="'contato'">Contato</a>
+							</li>
+						</ul>
+						<a class="whatsapp ml-3" href="#"><i class="fab fa-whatsapp"></i></a>
+						<a class="facebook ml-3" href="#"><i class="fab fa-facebook-messenger"></i></a>
+					</div>
+				</nav>
+
+				<nav id="bt-menu" class="bt-menu">
+					<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+					<ul>
+						<li><a href="#topo" class="animate rand">INICIO</a></li>
+						<li><a href="/camarotes/">CAMAROTES</a></li>
+						<li><a href="#atracoes" class="animate rand">ATRAÇÕES</a></li>
+						<li><a href="/locais/">PONTOS DE VENDA</a></li>
+						<li><a href="https://realista.com.br/produto/hospedagem-ccs18" target="_blank">HOTÉIS</a></li>
+						<li><a href="#contato" class="animate rand">CONTATO</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+	<router-outlet></router-outlet>
+</main>
+
+<footer>
+	<section class="contatos">
+		<div class="container">
+			<div class="row">
+				<div class="offset-xl-2 col-xl-8 text-center">
+					<h2 class="titulo">Conheça Nossas Principais <br>Soluções</h2>
+					<p class="description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 txt-contatos">
+							<i class="fas fa-phone"></i>
+							<p class="contatos">
+								(041) 99334.9887 <br>
+								(041) 99875.9809
+							</p>
+						</div>
+						<div class="col-xl-12 col-lg-12 txt-contatos">
+							<i class="fas fa-envelope"></i>
+							<p class="contatos">
+								contato@certifis.com.br <br>
+								atendimento@certifis.com.br
+							</p>
+						</div>
+						<div class="col-xl-12 col-lg-12 txt-contatos">
+							<i class="fas fa-map-marker-alt"></i>
+							<p class="contatos">
+								Rua Ponte Serrada, 566, Sala 02, <br>Comasa, 89.228-271, Joinville -SC
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-8 col-lg-8">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3577.5570474448386!2d-48.80864228417551!3d-26.276035873280726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRua+Ponte+Serrada%2C+566%2C+Sala+02%2C+Comasa%2C+89.228-271%2C+Joinville+-SC!5e0!3m2!1spt-BR!2sbr!4v1540133540256" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="copyright">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col">
+					<p>
+						Todos os direitos reservados Certifis Certificadora Digital - <a href="http://taiuan.com.br" title="Acesse nosso site e seja um cliente" target="_blank">Made in Taiuan</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>

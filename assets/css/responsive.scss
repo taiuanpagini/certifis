@@ -1,0 +1,297 @@
+@media screen and (max-width: 1270px) {
+    .tp-bullets {
+        bottom: 350px !important;
+        left: 530px !important;    
+    }
+    main .tp-simpleresponsive .tp-caption.primeira-linha {
+        top: 190px !important;
+    }
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        top: 260px !important;    
+    }
+    main .tp-simpleresponsive .tp-caption.banner-principal {
+        left: 700px !important;
+    }
+    main .tp-simpleresponsive .tp-caption.banner-principal img {
+        max-width: 100%;
+        width: inherit !important;
+        height: auto !important;    
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    header .menu-principal ul li a {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header .menu-principal {
+        a {
+            &.btn-promocao,
+            &.btn-reservar {
+                display: none;
+            }
+        }
+        ul {
+            li {
+                a {
+                    font-size: 10pt;
+                }
+            }
+        }
+    }
+    .paralax-diversao {
+		left: -370px;
+    	bottom: 108px;
+    }
+    main section.diversao h2 {
+        margin-top: 95px;
+        margin-left: -60px;
+    }
+    .tp-bullets {
+        bottom: 220px !important;
+        left: 400px !important;    
+    }
+    main .tp-simpleresponsive .tp-caption.primeira-linha,
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        font-size: 55px !important;
+        left: 0px !important;    
+    }
+    main .tp-simpleresponsive .tp-caption.banner-principal {
+        left: 470px !important;
+    }
+    main section.reservas .bg-form-reserva .leonardo-boia {
+        bottom: -30%;
+        right: -70%;
+        background-size: 70% !important;
+    }
+    main section.reservas .bg-form-reserva .dica-leo {
+        top: 25%;
+        right: -82%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    main section.diversao h2 {
+        margin-top: 75px;
+        margin-left: -50px;
+    }
+    main .tp-simpleresponsive .tp-caption.primeira-linha,
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        font-size: 49px !important;
+        top: 120px !important;
+    }
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        top: 180px !important;
+    }
+    main .tp-simpleresponsive .tp-caption.banner-principal {
+        left: 60px !important;
+    }
+    main .tp-simpleresponsive .tp-caption.banner-principal img {
+        max-width: 50%; 
+        float: right;
+    }
+    .tp-bullets {
+        bottom: 170px !important;
+        left: 330px !important;    
+    }
+    main section.reservas .bg-form-reserva div.pmweb_widget[id^="pmwebwidget"].sweet .pm_checkin, 
+    main section.reservas .bg-form-reserva div.pmweb_widget[id^="pmwebwidget"].sweet .pm_checkout, 
+    main section.reservas .bg-form-reserva div.pmweb_widget[id^="pmwebwidget"].sweet .pm_adults, 
+    main section.reservas .bg-form-reserva div.pmweb_widget[id^="pmwebwidget"].sweet .pm_children {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+    main section.reservas .bg-form-reserva .leonardo-boia {
+        bottom: -21%;
+        right: -90%;
+        background-size: 80% !important;
+    }
+    main section.reservas .bg-form-reserva .dica-leo {
+        top: 35%;
+        right: -105%;
+        background-size: 60% !important;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    div.pmweb_widget[id^="pmwebwidget"].sweet .pm_wrapper .pm_fields {
+        width: 100% !important;
+    }
+    main section.reservas .bg-form-reserva .leonardo-boia {
+        bottom: -11%;
+        right: -95%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .paralax-diversao {
+        left: -380px;
+        bottom: 85px;
+    }
+    main section.diversao h2 {
+        margin-top: 55px;
+        margin-left: -50px;
+        font-size: 28pt;
+        line-height: 30px;
+    }
+    main section.diversao p {
+        font-size: 9pt;
+        margin-top: 10px;
+    }
+    main section.diversao a {
+        font-size: 8pt;
+    }
+    main section.diversao img.diversao {
+        margin-top: 30px;
+    }
+    main .tp-simpleresponsive .tp-caption.primeira-linha,
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        font-size: 35px !important;
+        top: 90px !important;
+    }
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        top: 130px !important;
+    }
+    .tp-bullets {
+        bottom: 120px !important;
+        left: 260px !important;    
+    }
+    main section.reservas .bg-form-reserva .leonardo-boia,
+    main section.reservas .bg-form-reserva .dica-leo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    main section.reservas .bg-form-reserva div.pmweb_widget[id^="pmwebwidget"].sweet .pm_links {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    main .tp-simpleresponsive .tp-caption.primeira-linha,
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        left: 15px !important;
+    }
+    main .tp-simpleresponsive .tp-caption.banner-principal {
+        margin-right: 15px;
+    }
+    .paralax-diversao {
+        left: -210px;
+        bottom: 180px;    
+    }
+    main section.diversao img.diversao {
+        margin: 0 auto 60px;
+        display: table;    
+    }
+    main section.diversao h2 {
+        margin-top: 120px;
+        font-size: 36pt;
+        line-height: 38px;    
+    }
+    main section.diversao p {
+        font-size: 11pt;
+        margin-top: 15px;    
+    }
+    main section.diversao a {
+        font-size: 10pt;
+    }
+	footer section.copyright p {
+		text-align: center;
+	}
+	footer section.acesso-rapido a.midias {
+		width: initial;
+		margin-right: 20px
+	}
+	footer section.acesso-rapido a.titulo-midias {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 545px) {
+    main .tp-simpleresponsive .tp-caption.primeira-linha,
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        font-size: 32px !important;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    main section.diversao h2 {
+        margin-top: 130px;
+        font-size: 26pt;
+        line-height: 28px;    
+    }
+    main section.diversao p {
+        font-size: 9pt;
+        line-height: 15px;    
+    }
+    main section.diversao a {
+        font-size: 8pt;    
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main section.diversao h2 {
+        margin-top: 100px;
+    }
+    main .tp-simpleresponsive .tp-caption.primeira-linha,
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        font-size: 27px !important;
+        top: 80px !important;
+    }
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        top: 110px !important;
+    }
+    .tp-bullets {
+        left: 200px !important;
+    }
+}
+
+@media screen and (max-width: 445px) {
+	footer section.acesso-rapido .col-6 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+	footer section.acesso-rapido a.titulo-midias {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 425px) {
+    main section.diversao h2 {
+        margin-top: 80px;
+    }
+    main .tp-simpleresponsive .tp-caption.primeira-linha,
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        font-size: 23px !important;
+        top: 65px !important;
+    }
+    main .tp-simpleresponsive .tp-caption.segunda-linha {
+        top: 90px !important;
+    }
+    .tp-bullets {
+        left: 170px !important;
+        bottom: 90px !important;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    main section.diversao h2 {
+        margin-top: 60px;
+        font-size: 22pt;
+        line-height: 25px;
+    }
+    main section.diversao p {
+        font-size: 8pt;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    main section.diversao p {
+        font-size: 7pt;
+        line-height: 12px;
+    }
+}

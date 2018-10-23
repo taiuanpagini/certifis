@@ -97,7 +97,7 @@
     color: #317aff;
     font-size: 40px;
     left: -60px;
-    top: -15px;
+    top: 110px;
     position: absolute;
     font-family: "Baloo", sans-serif; }
     .owl-carousel .owl-nav button.owl-next {
@@ -106,6 +106,7 @@
     }
     .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
       background: none;
+      color: #317aff;
     }
     .owl-carousel .owl-nav button.owl-prev:focus, .owl-carousel .owl-nav button.owl-next:focus {
       outline: none;

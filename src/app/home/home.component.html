@@ -1,4 +1,9 @@
-
+<div class="loaders">
+  <div class="loader">
+    <div id="certifis"></div>
+    <span class="text-center txt-loader">Carregando</span>
+  </div>
+</div>
 <section class="banner">
   <div class="container">
     <div class="row">
@@ -118,11 +123,17 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
           </div>
           <div class="col-xl-7 col-lg-7">
-            <form class="form-inline">
+            <!-- <form class="form-inline">
               <input type="text" class="form-control mr-4" id="inlineFormInputName2" placeholder="Nome">              
               
               <input type="email" class="form-control" id="inlineFormInputGroupUsername2" placeholder="E-mail">              
             
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form> -->
+            <form #form="ngForm" (ngSubmit)="form.valid && enviarEmail(form)" class="form-inline">
+              <input type="hidden" name="Assunto" [(ngModel)]="model.Assunto">
+              <input type="text" name="Nome" placeholder="Nome" minlength="4" required [(ngModel)]="model.Nome" #Nome="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Nome.invalid }" class="form-control mr-4">
+              <input type="email" name="Email" placeholder="E-mail " required [(ngModel)]="model.Email" #Email="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Email.invalid }" class="form-control">
               <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
           </div>

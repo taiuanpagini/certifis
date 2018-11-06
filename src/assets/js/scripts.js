@@ -1,9 +1,3 @@
-$(window).load(function() {
-    $(".loader").fadeOut("slow", function(){
-    $(".loaders").delay(300).fadeOut("slow");
-    });
-})
-
 var revapi;
 $(document).ready(function() {
     revapi = $('.tp-banner').revolution(

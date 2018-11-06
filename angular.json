@@ -37,7 +37,8 @@
               "./src/assets/css/style-menu-mobile.css",
               "./src/assets/css/amazingslider-1.css",
               "./src/assets/css/main.css",
-              "./src/assets/css/responsive.scss"
+              "./src/assets/css/responsive.scss",
+              "./node_modules/ng-snotify/styles/material.scss"
             ],
             "scripts": [
               "./node_modules/popper.js/dist/umd/popper.min.js",

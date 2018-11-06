@@ -1,49 +1,44 @@
+<ng-snotify></ng-snotify>
 <header>
 	<div class="container">
 		<div class="row">
 			<div class="col">
 				<nav class="navbar navbar-expand-lg">
 					<a class="navbar-brand" href="/"><img src="assets/images/logo-topo.png" alt="logo certifis do lago"></a>
-
-					<div class="collapse navbar-collapse menu-principal ml-auto" id="navbarTogglerDemo02">
+					<button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+						<span class="navbar-toggler-icon"></span> Menu
+					</button>
+					<div class="collapse navbar-collapse menu-principal ml-auto" id="navbarTogglerDemo02" [ngClass]="{ 'show': navbarOpen }">
 						<ul class="navbar-nav ml-auto">
+							<!-- <li class="nav-item">
+								<a routerLink="/" routerLinkActive="active">Inicio</a>
+								<ul class="submenu">
+									<li><a routerLink="parque-aquatico">Parque Aquático</a></li>
+									<li><a routerLink="acomodacoes">Acomodações</a></li>
+									<li><a routerLink="gastronomia">Gastronomia</a></li>
+									<li><a routerLink="lago-corumba">Lago Corumbá</a></li>
+								</ul>
+							</li> -->
 							<li class="nav-item">
-								<a href="/">Início</a>
-								<!--ul class="submenu">
-									<li><a [routerLink]="'parque-aquatico'">Parque Aquático</a></li>
-									<li><a [routerLink]="'acomodacoes'">Acomodações</a></li>
-									<li><a [routerLink]="'gastronomia'">Gastronomia</a></li>
-									<li><a [routerLink]="'lago-corumba'">Lago Corumbá</a></li>
-								</ul-->
+								<a routerLink="/empresa" routerLinkActive="active">A Empresa</a>
 							</li>
 							<li class="nav-item">
-								<a [routerLink]="'empresa'">A Empresa</a>
+								<a routerLink="/solucoes" routerLinkActive="active">Soluções</a>
+								<ul class="submenu">
+									<li><a routerLink="#">e-CPF</a></li>
+									<li><a routerLink="#">e-CNPJ</a></li>
+								</ul>
 							</li>
 							<li class="nav-item">
-								<a [routerLink]="'solucoes'">Soluções</a>
+								<a routerLink="/pontos-atendimento" routerLinkActive="active">Pontos de Atendimento</a>
 							</li>
 							<li class="nav-item">
-								<a [routerLink]="'pontos-atendimento'">Pontos de Atendimento</a>
-							</li>
-							<li class="nav-item">
-								<a [routerLink]="'contato'">Contato</a>
+								<a routerLink="/contato" routerLinkActive="active">Contato</a>
 							</li>
 						</ul>
 						<a class="whatsapp ml-3" href="#"><i class="fab fa-whatsapp"></i></a>
 						<a class="facebook ml-3" href="#"><i class="fab fa-facebook-messenger"></i></a>
 					</div>
-				</nav>
-
-				<nav id="bt-menu" class="bt-menu">
-					<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
-					<ul>
-						<li><a href="#topo" class="animate rand">INICIO</a></li>
-						<li><a href="/camarotes/">CAMAROTES</a></li>
-						<li><a href="#atracoes" class="animate rand">ATRAÇÕES</a></li>
-						<li><a href="/locais/">PONTOS DE VENDA</a></li>
-						<li><a href="https://realista.com.br/produto/hospedagem-ccs18" target="_blank">HOTÉIS</a></li>
-						<li><a href="#contato" class="animate rand">CONTATO</a></li>
-					</ul>
 				</nav>
 			</div>
 		</div>
@@ -59,7 +54,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="offset-xl-2 col-xl-8 text-center">
-					<h2 class="titulo">Conheça Nossas Principais <br>Soluções</h2>
+					<h2 class="titulo">Precisa de ajuda? Não perca tempo <br>e fale conosco </h2>
 					<p class="description">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 					</p>

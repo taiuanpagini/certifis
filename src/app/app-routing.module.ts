@@ -6,11 +6,15 @@ import { EmpresaComponent } from './empresa/empresa.component';
 import { SolucoesComponent } from './solucoes/solucoes.component';
 import { PontosAtendimentoComponent } from './pontos-atendimento/pontos-atendimento.component';
 import { ContatoComponent } from './contato/contato.component';
+import { ECpfComponent } from './solucoes/e-cpf/e-cpf.component';
+import { ECnpjComponent } from './solucoes/e-cnpj/e-cnpj.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'empresa', component: EmpresaComponent },
   { path: 'solucoes', component: SolucoesComponent },
+  { path: 'solucoes/e-cpf', component: ECpfComponent },
+  { path: 'solucoes/e-cnpj', component: ECnpjComponent },
   { path: 'pontos-atendimento', component: PontosAtendimentoComponent },
   { path: 'contato', component: ContatoComponent }
 ];

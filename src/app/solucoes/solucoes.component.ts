@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { GlobalsService } from '../providers/globals';
 
 declare var $: any;
 @Component({
@@ -9,10 +10,13 @@ declare var $: any;
 })
 export class SolucoesComponent implements OnInit {
 
-  constructor(private title: Title) { }
+  constructor(
+    private title: Title,
+    private GlobalsService: GlobalsService
+    ) { }
 
   ngOnInit() {
-    this.title.setTitle('Certifis Certificação Digital - Conheça a Empresa');
+    this.title.setTitle('Certifis Certificação Digital - Conheça nossas soluções');
     $(".loader").fadeOut("slow");
     $(".loaders").delay(300).fadeOut("slow");
   }

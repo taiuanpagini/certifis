@@ -13,7 +13,6 @@ import {StorageService} from "./storage";
 @Injectable()
 export class GlobalsService {
 
-    
     public URL_api = 'https://innsere-rest.herokuapp.com/api/mysql';
     inProcessForm: boolean;
 

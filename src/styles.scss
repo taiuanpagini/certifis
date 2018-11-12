@@ -787,14 +787,17 @@ main {
             .img-certificado {
                 padding: 20px;
                 box-sizing: border-box;
-                border: 1px solid #EFEFEF;
             }
             .certificado {
                 width: 100%;
                 float: left;
-                background: #EDEDED;
+                background: $azul-menu;
+                color: $branco;
+                border-radius: 5px;
                 margin-bottom: 10px;
                 padding: 10px;
+                cursor: pointer;
+                @include transitionNormal();
                 span {
                     &.validade {
                         b {}
@@ -803,11 +806,46 @@ main {
                 &:last-child {
                     margin-bottom: 0;
                 }
+                &:hover {
+                    background: $azul-menu-hover;
+                }
+            }
+            .certificado-individual {
+                &:last-child {
+                    margin-bottom: 10px;
+                }
             }
             .valor-validade {
-                padding: 20px 20px 0 0;
+                padding: 40px 20px 0 0;
+                font-size: 18px;
+                font-weight: 400;
                 box-sizing: border-box;
-                border: 1px solid #EFEFEF;
+                b {
+                    &.validade {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+                span {
+                    &.valor {
+                        width: 100%;
+                        float: left;
+                        margin-top: 50px;
+                        b {
+                            font-size: 50px;
+                            color: $azul-menu-hover;
+                        }
+                    }
+                    &.comprar {
+                        background: $verde-whats;
+                        color: $branco;
+                        border-radius: 70px;
+                        padding: 10px 50px;
+                        margin: 20px auto 0;
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }

@@ -20,6 +20,7 @@ import { HttpService } from './providers/http';
 import { ConnectService } from './providers/connect';
 import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
 import { Http, HttpModule } from '@angular/http';
+import {NgxMaskModule} from 'ngx-mask'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { Http, HttpModule } from '@angular/http';
     ContatoModule,
     AppRoutingModule,
     OwlModule,
-    SnotifyModule
+    SnotifyModule,
+    NgxMaskModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [

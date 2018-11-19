@@ -93,7 +93,7 @@
 <section class="sobre">
   <div class="container">
     <div class="row">
-      <div class="col-xl-6 col-lg-6">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
         <h3 class="subtitulo">Sobre</h3>
         <h2 class="titulo">Conheça a Certifis</h2>
         <p class="description">
@@ -104,9 +104,9 @@
           <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
           <li> laboris nisi ut aliquip ex ea commodo consequat. </li>
         </ul>
-        <a href="#" class="btn-ver-mais">Saiba Mais</a>
+        <a routerLink="/empresa" class="btn-ver-mais">Saiba Mais</a>
       </div>
-      <div class="col-xl-6 col-lg-6">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
         <img src="assets/images/img-sobre.png" class="img-fluid" alt="sobre a certifis">
       </div>
     </div>
@@ -116,20 +116,13 @@
 <section class="newsletter">
   <div class="container bg-news">
     <div class="row">
-      <div class="col-xl-12 col-lg-12">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="row">
-          <div class="col-xl-5 col-lg-5">
+          <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12">
             <h2 class="titulo">Receba Nossa Newsletter</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
           </div>
-          <div class="col-xl-7 col-lg-7">
-            <!-- <form class="form-inline">
-              <input type="text" class="form-control mr-4" id="inlineFormInputName2" placeholder="Nome">              
-              
-              <input type="email" class="form-control" id="inlineFormInputGroupUsername2" placeholder="E-mail">              
-            
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </form> -->
+          <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12">
             <form #form="ngForm" (ngSubmit)="form.valid && enviarEmail(form)" class="form-inline">
               <input type="hidden" name="Assunto" [(ngModel)]="model.Assunto">
               <input type="text" name="Nome" placeholder="Nome" minlength="4" required [(ngModel)]="model.Nome" #Nome="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Nome.invalid }" class="form-control mr-4">
@@ -146,7 +139,7 @@
 <section class="solucoes">
   <div class="container">
     <div class="row">
-      <div class="offset-xl-2 col-xl-8 text-center">
+      <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
         <h2 class="titulo">Conheça Nossas Principais <br>Soluções</h2>
         <p class="description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
@@ -154,50 +147,50 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xl-4 col-lg-4 my-auto">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 my-auto mx-auto">
         <img src="assets/images/img-solucoes.png" class="img-fluid" alt="nossas soluções">
       </div>
-      <div class="col-xl-8 col-lg-8">
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
         <div class="row">
-          <div class="col-xl-12 col-lg-12 solucao">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 solucao">
             <div class="row">                                                            
-              <div class="col-xl-2 col-lg-2">
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
                 <i class="far fa-credit-card"></i>
               </div>
-              <div class="col-xl-10 col-lg-10">
+              <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-9">
                 <h2 class="titulo-solucoes">e-CPF</h2>
                 <span class="description-solucoes">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
                 </span>
-                <a href="#"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
+                <a routerLink="/solucoes/e-cpf"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
               </div>
             </div>
           </div>
-          <div class="col-xl-12 col-lg-12 solucao">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 solucao">
             <div class="row">                                                            
-              <div class="col-xl-2 col-lg-2">
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
                 <i class="far fa-credit-card"></i>
               </div>
-              <div class="col-xl-10 col-lg-10">
+              <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-9">
                 <h2 class="titulo-solucoes">e-CNPJ</h2>
                 <span class="description-solucoes">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
                 </span>
-                <a href="#"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
+                <a routerLink="/solucoes/e-cnpj"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
               </div>
             </div>
           </div>
-          <div class="col-xl-12 col-lg-12 solucao">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 solucao">
             <div class="row">                                                            
-              <div class="col-xl-2 col-lg-2">
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
                 <i class="far fa-credit-card"></i>
               </div>
-              <div class="col-xl-10 col-lg-10">
+              <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-9">
                 <h2 class="titulo-solucoes">A1 e A3</h2>
                 <span class="description-solucoes">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
                 </span>
-                <a href="#"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
+                <a routerLink="/solucoes/midias"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
               </div>
             </div>
           </div>
@@ -205,7 +198,7 @@
       </div>
     </div>
     <div class="row">
-      <a href="#" class="btn-ver-mais mx-auto">Conheça Todas Nossas Soluções</a>
+      <a routerLink="/solucoes" class="btn-ver-mais mx-auto">Conheça Todas Nossas Soluções</a>
     </div>
   </div>
 </section>

@@ -27,27 +27,27 @@
           </div>
           <div class="col-lg-6">
             <div class="contact-form">
-              <form class="contact-us-form row" action="#" method="post" id="contactForm" novalidate="novalidate">
+              <form #form="ngForm" (ngSubmit)="form.valid && enviarEmail(form)" class="contact-us-form row">
                 <div class="form-group col-lg-6">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
+                  <input type="text" class="form-control" name="Nome" placeholder="Nome" required [(ngModel)]="model.Nome" #Nome="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Nome.invalid }">
                 </div>
                 <div class="form-group col-lg-6">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
+                  <input type="email" class="form-control" name="Email" placeholder="E-mail" required [(ngModel)]="model.Email" #Email="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Email.invalid }">
                 </div>
                 <div class="form-group col-lg-6">
-                  <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+                  <input type="text" class="form-control" name="Telefone" mask="(00) 0000-0000" placeholder="Telefone" required [(ngModel)]="model.Telefone" #Telefone="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Telefone.invalid }">
                 </div>
                 <div class="form-group col-lg-6">
-                  <input type="email" class="form-control" id="celular" name="celular" placeholder="Celular">
+                  <input type="text" class="form-control" name="Celular" mask="(00) 00000-0000" placeholder="Celular" required [(ngModel)]="model.Celular" #Celular="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Celular.invalid }">
                 </div>
                 <div class="form-group col-lg-8">
-                  <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade">
+                  <input type="text" class="form-control" name="Cidade" placeholder="Cidade" required [(ngModel)]="model.Cidade" #Cidade="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Cidade.invalid }">
                 </div>
                 <div class="form-group col-lg-4">
-                  <input type="email" class="form-control" id="uf" name="uf" placeholder="UF">
+                  <input type="text" class="form-control" name="Uf" placeholder="UF" required [(ngModel)]="model.Uf" #Uf="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Uf.invalid }">
                 </div>
                 <div class="form-group col-lg-12">
-                  <textarea class="form-control" name="mensagem" id="mensagem" rows="1" placeholder="Mensagem"></textarea>
+                  <textarea class="form-control" name="Mensagem" rows="1" placeholder="Mensagem" required [(ngModel)]="model.Mensagem" #Mensagem="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Mensagem.invalid }"></textarea>
                 </div>
                 <div class="form-group offset-lg-8 col-lg-4 col-md-4">
                   <button type="submit" value="submit" class="btn submit_btn2 form-control">Enviar</button>

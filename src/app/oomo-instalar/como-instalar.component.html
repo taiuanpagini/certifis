@@ -1,0 +1,95 @@
+<div class="loaders">
+  <div class="loader">
+    <div id="certifis"></div>
+    <span class="text-center txt-loader">Carregando</span>
+  </div>
+</div>
+<section class="interna solucoes">
+  <section class="banner-interna">
+    <div class="container">
+      <div class="banner-text">
+        <h4>Como Instalar</h4>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+      </div>
+    </div>
+  </section>
+
+  <section class="description-interna description-certificado">
+    <div class="container">
+      <div class="contact-details-inner">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3">
+            <img src="assets/images/banner-1.png" class="img-fluid img-certificado" alt="">
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-5">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(0)">
+                <span class="float-left">
+                  e-CPF <br>
+                  <b>A1 | Arquivo</b>
+                </span>
+                <span class="validade float-right mt-0 text-center">
+                  1 <br>
+                  <b>Ano</b>
+                </span>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(1)">
+                <span class="float-left">
+                  e-CPF <br>
+                  <b>A2 | Cartão</b>
+                </span>
+                <span class="validade float-right mt-0 text-center">
+                  2 <br>
+                  <b>Anos</b>
+                </span>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(2)">
+                <span class="float-left">
+                  e-CPF <br>
+                  <b>A2 | Token</b>
+                </span>
+                <span class="validade float-right mt-0 text-center">
+                  2 <br>
+                  <b>Anos</b>
+                </span>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(3)">
+                <span class="float-left">
+                  e-CPF <br>
+                  <b>A3 | Cartão</b>
+                </span>
+                <span class="validade float-right mt-0 text-center">
+                  3 <br>
+                  <b>Anos</b>
+                </span>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(4)">
+                <span class="float-left">
+                  e-CPF <br>
+                  <b>A3 | Token</b>
+                </span>
+                <span class="validade float-right mt-0 text-center">
+                  3 <br>
+                  <b>Anos</b>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 text-center valor-validade">
+            <span *ngFor="let solucoes of arSolucoes">
+              <span *ngIf="solucoes.id == this.idSolucao">
+                {{ solucoes.nome }} <br>
+                <b class="validade">Validade: {{ solucoes.validade }}</b> <br>
+                <span class="valor">
+                  R$ <b>{{ solucoes.valor }}</b> <br>
+                  em até {{ solucoes.parcela }} x de R$ {{ solucoes.valorParcela }}
+                </span>
+                <span class="comprar" routerLink="/contato">Tenho Interesse</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

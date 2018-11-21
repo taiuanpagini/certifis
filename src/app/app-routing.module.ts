@@ -9,6 +9,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { ECpfComponent } from './solucoes/e-cpf/e-cpf.component';
 import { ECnpjComponent } from './solucoes/e-cnpj/e-cnpj.component';
 import { MidiasComponent } from './solucoes/midias/midias.component';
+import { ComoInstalarComponent } from './oomo-instalar/como-instalar.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'solucoes/e-cnpj', component: ECnpjComponent },
   { path: 'solucoes/midias-hardware', component: MidiasComponent },
   { path: 'pontos-atendimento', component: PontosAtendimentoComponent },
+  { path: 'como-instalar', component: ComoInstalarComponent },
   { path: 'contato', component: ContatoComponent }
 ];
 

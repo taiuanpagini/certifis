@@ -21,6 +21,7 @@ import { ConnectService } from './providers/connect';
 import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
 import { Http, HttpModule } from '@angular/http';
 import {NgxMaskModule} from 'ngx-mask'
+import { ComoInstalarComponent } from './oomo-instalar/como-instalar.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {NgxMaskModule} from 'ngx-mask'
     EmpresaComponent,
     SolucoesComponent,
     PontosAtendimentoComponent,
+    ComoInstalarComponent,
     ContatoComponent
   ],
   imports: [

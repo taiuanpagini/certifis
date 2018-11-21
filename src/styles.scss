@@ -106,7 +106,7 @@ header {
                 ul.submenu {
                     position: absolute;
                     left: 5px;
-                    bottom: -90px;
+                    bottom: -110px;
                     padding: 10px;
                     display: none;
                     z-index: 9999;
@@ -239,6 +239,12 @@ main {
             &:hover {
                 background: $branco;
                 color: $azul-menu;
+            }
+        }
+        &.btn-parceiro {
+            margin-top: 80px;
+            &:hover {
+                background: transparent;
             }
         }
     }
@@ -911,6 +917,17 @@ footer {
                     color: #565555;
                     font-size: 11pt;
                     margin-top: 13px;
+                }
+
+                &.links-uteis {
+                    margin-top: 0;
+                    a {
+                        color: #666666;
+                        @include transitionNormal();
+                        &:hover {
+                            color: $azul-menu;
+                        }
+                    }
                 }
             }
         }

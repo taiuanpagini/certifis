@@ -897,46 +897,46 @@ main {
         &.como-instalar {
             .card {
                 .card-header {
-                    background: $branco;
+                    background: $branco;                    
+                }
+                .btn-link {
+                    width: 100%;
+                    color: $azul-menu;
+                    text-align: left;
 
-                    .btn-link {
-                        width: 100%;
-                        color: $azul-menu;
-                        text-align: left;
-
-                        &:hover {
-                            text-decoration: none;
-                            color: $azul-menu-hover;
-                        }
-
-                        &:focus {
-                            text-decoration: none;
-                        }
+                    &:hover {
+                        text-decoration: none;
+                        color: $azul-menu-hover;
                     }
 
-                    .collapse.show {
-                        background: $branco;
+                    &:focus {
+                        text-decoration: none;
+                    }
+                }
 
-                        .card-body {
+                .collapse.show {
+                    background: $branco;
+
+                    .card-body {
+                        float: left;
+
+                        span {
                             float: left;
+                            margin-bottom: 15px;
 
-                            span {
+                            a {
+                                width: 100%;
                                 float: left;
-                                margin-bottom: 15px;
+                            }
 
-                                a {
-                                    width: 100%;
-                                    float: left;
-                                }
+                            small {
+                                width: 100%;
+                                float: left;
+                                font-size: 10pt;
+                            }
 
-                                small {
-                                    width: 100%;
-                                    float: left;
-                                }
-
-                                &:last-child {
-                                    margin-bottom: 0;
-                                }
+                            &:last-child {
+                                margin-bottom: 0;
                             }
                         }
                     }

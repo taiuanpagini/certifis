@@ -43,12 +43,13 @@ export class ContatoComponent implements OnInit {
               body: 'Em breve entraremos em contato!!',
               config: {
                 closeOnClick: true,
-                timeout: 5000,
+                timeout: 3000,
                 showProgressBar: true
               }
             });
             observer.complete();
-          }, 5000);
+          }, 3000);
+          form.reset();
         },
         (error) => {
           console.log(error);

@@ -4,7 +4,7 @@
     <span class="text-center txt-loader">Carregando</span>
   </div>
 </div>
-<section class="interna solucoes">
+<section class="interna como-instalar">
   <section class="banner-interna">
     <div class="container">
       <div class="banner-text">
@@ -18,75 +18,49 @@
     <div class="container">
       <div class="contact-details-inner">
         <div class="row">
-          <div class="col-xl-3 col-lg-3 col-md-3">
-            <img src="assets/images/banner-1.png" class="img-fluid img-certificado" alt="">
+          <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+            <h2 class="titulo-download">Selecione um dispositivo e baixe o drive de instalação.</h2>
+            <ngb-accordion [closeOthers]="true" #acc="ngbAccordion">
+              <ngb-panel [id]="instalar.id" [title]="instalar.nome" class="toggle" *ngFor="let instalar of arComoInstalar">
+                <ng-template ngbPanelContent>
+                  <span *ngFor="let driver of instalar.drivers">
+                    <a [href]="driver.link">{{ driver.nome }}</a>
+                    <small>{{ driver.especificacao }}</small>
+                  </span>
+                </ng-template>
+              </ngb-panel>
+            </ngb-accordion>
           </div>
-          <div class="col-xl-5 col-lg-5 col-md-5">
-            <div class="row">
-              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(0)">
-                <span class="float-left">
-                  e-CPF <br>
-                  <b>A1 | Arquivo</b>
-                </span>
-                <span class="validade float-right mt-0 text-center">
-                  1 <br>
-                  <b>Ano</b>
-                </span>
-              </div>
-              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(1)">
-                <span class="float-left">
-                  e-CPF <br>
-                  <b>A2 | Cartão</b>
-                </span>
-                <span class="validade float-right mt-0 text-center">
-                  2 <br>
-                  <b>Anos</b>
-                </span>
-              </div>
-              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(2)">
-                <span class="float-left">
-                  e-CPF <br>
-                  <b>A2 | Token</b>
-                </span>
-                <span class="validade float-right mt-0 text-center">
-                  2 <br>
-                  <b>Anos</b>
-                </span>
-              </div>
-              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(3)">
-                <span class="float-left">
-                  e-CPF <br>
-                  <b>A3 | Cartão</b>
-                </span>
-                <span class="validade float-right mt-0 text-center">
-                  3 <br>
-                  <b>Anos</b>
-                </span>
-              </div>
-              <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-12 certificado" (click)="getSolucao(4)">
-                <span class="float-left">
-                  e-CPF <br>
-                  <b>A3 | Token</b>
-                </span>
-                <span class="validade float-right mt-0 text-center">
-                  3 <br>
-                  <b>Anos</b>
-                </span>
-              </div>
+          <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 pr-0 mt-md-12">
+            <h2 class="titulo-download">Informe os dados abaixo e envie sua solicitação para a CERTIFIS. Nossa equipe entrará em contato o quanto antes.</h2>
+            <div class="contact-form">
+              <form #form="ngForm" (ngSubmit)="form.valid && enviarEmail(form)" class="contact-us-form row">
+                <div class="form-group col-lg-6">
+                  <input type="text" class="form-control" name="Nome" placeholder="Nome" required [(ngModel)]="model.Nome" #Nome="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Nome.invalid }">
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="email" class="form-control" name="Email" placeholder="E-mail" required [(ngModel)]="model.Email" #Email="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Email.invalid }">
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="text" class="form-control" name="Telefone" mask="(00) 0000-0000" placeholder="Telefone" required [(ngModel)]="model.Telefone" #Telefone="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Telefone.invalid }">
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="text" class="form-control" name="Celular" mask="(00) 00000-0000" placeholder="Celular" required [(ngModel)]="model.Celular" #Celular="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Celular.invalid }">
+                </div>
+                <div class="form-group col-lg-8">
+                  <input type="text" class="form-control" name="Cidade" placeholder="Cidade" required [(ngModel)]="model.Cidade" #Cidade="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Cidade.invalid }">
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" class="form-control" name="Uf" placeholder="UF" maxlength="2" required [(ngModel)]="model.Uf" #Uf="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Uf.invalid }">
+                </div>
+                <div class="form-group col-lg-12">
+                  <textarea class="form-control" name="Mensagem" rows="1" placeholder="Mensagem" required [(ngModel)]="model.Mensagem" #Mensagem="ngModel" [ngClass]="{ 'is-invalid': form.submitted && Mensagem.invalid }"></textarea>
+                </div>
+                <div class="form-group offset-lg-8 col-lg-4">
+                  <button type="submit" value="submit" class="btn submit_btn2 form-control float-right">Enviar</button>
+                </div>
+              </form>
             </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 text-center valor-validade">
-            <span *ngFor="let solucoes of arSolucoes">
-              <span *ngIf="solucoes.id == this.idSolucao">
-                {{ solucoes.nome }} <br>
-                <b class="validade">Validade: {{ solucoes.validade }}</b> <br>
-                <span class="valor">
-                  R$ <b>{{ solucoes.valor }}</b> <br>
-                  em até {{ solucoes.parcela }} x de R$ {{ solucoes.valorParcela }}
-                </span>
-                <span class="comprar" routerLink="/contato">Tenho Interesse</span>
-              </span>
-            </span>
           </div>
         </div>
       </div>

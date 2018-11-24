@@ -152,45 +152,17 @@
       </div>
       <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
         <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 solucao">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 solucao" *ngFor="let midias of arSolucoes">
             <div class="row">                                                            
               <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
-                <i class="far fa-credit-card"></i>
+                <i [class]="midias.icone"></i>
               </div>
               <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-9">
-                <h2 class="titulo-solucoes">e-CPF</h2>
+                <h2 class="titulo-solucoes">{{ midias.titulo }}</h2>
                 <span class="description-solucoes">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                  {{ midias.descricao }}
                 </span>
-                <a routerLink="/solucoes/e-cpf"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 solucao">
-            <div class="row">                                                            
-              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
-                <i class="far fa-credit-card"></i>
-              </div>
-              <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-9">
-                <h2 class="titulo-solucoes">e-CNPJ</h2>
-                <span class="description-solucoes">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-                </span>
-                <a routerLink="/solucoes/e-cnpj"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 solucao">
-            <div class="row">                                                            
-              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
-                <i class="far fa-credit-card"></i>
-              </div>
-              <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-9">
-                <h2 class="titulo-solucoes">A1 e A3</h2>
-                <span class="description-solucoes">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-                </span>
-                <a routerLink="/solucoes/midias"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
+                <a [routerLink]="midias.link"><span class="btn-solucoes">Ver mais <i class="fas fa-arrow-right"></i></span></a>
               </div>
             </div>
           </div>
@@ -211,8 +183,8 @@
       </div>
     </div>
     <div class="row"> 
-      <div class="col-xl-4 col-lg-4 mx-auto">
-        <img src="assets/images/jlcontabilidade.png" class="img-fluid" alt="">
+      <div class="col-xl-4 col-lg-4 mx-auto" *ngFor="let parceiro of arParceiros">
+        <img [src]="parceiro.url" class="img-fluid" [alt]="parceiro.alt">
       </div>
     </div>
     <div class="row">

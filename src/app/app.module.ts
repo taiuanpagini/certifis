@@ -13,6 +13,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { EmpresaModule } from './empresa/empresa.module';
 import { SolucoesModule } from './solucoes/solucoes.module';
 import { PontosAtendimentoModule } from './pontos-atendimento/pontos-atendimento.module';
+import { ComoInstalarComponent } from './oomo-instalar/como-instalar.component';
 import { ContatoModule } from './contato/contato.module';
 import { StorageService } from './providers/storage';
 import { GlobalsService } from './providers/globals';
@@ -20,8 +21,8 @@ import { HttpService } from './providers/http';
 import { ConnectService } from './providers/connect';
 import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
 import { Http, HttpModule } from '@angular/http';
-import {NgxMaskModule} from 'ngx-mask'
-import { ComoInstalarComponent } from './oomo-instalar/como-instalar.component';
+import {NgxMaskModule} from 'ngx-mask';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ComoInstalarComponent } from './oomo-instalar/como-instalar.component';
     AppRoutingModule,
     OwlModule,
     SnotifyModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
+    NgbModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [

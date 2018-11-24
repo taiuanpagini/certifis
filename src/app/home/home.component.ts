@@ -23,6 +23,38 @@ export class HomeComponent implements OnInit {
   //public sliderOptions: any = {items: 3, dots: false, nav: true, margin: 120, loop: true, responsive:{ 0:{ items: 1, margin: 60 }, 600:{ items: 2, margin: 20 }, 767:{ items: 2, margin: 40 }, 991:{ items: 2, margin: 120 }, 1200:{ items: 3 }}};
   public sliderOptions: any = {items: 1, dots: false, nav: true, margin: 120, loop: true, responsive:{ 0:{ items: 1, margin: 60 }, 600:{ items: 1, margin: 20 }, 767:{ items: 1, margin: 40 }, 991:{ items: 1, margin: 120 }, 1200:{ items: 1 }}};
 
+  arParceiros = [
+    {
+      alt: "J & L Contabilidade",
+      url: "/assets/images/jlcontabilidade.png"
+    },
+    {
+      alt: "Exime Contabilidade",
+      url: "/assets/images/eximecontabilidade.png"
+    }
+  ]
+
+  arSolucoes = [
+    {
+      titulo: "e-CPF",
+      descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+      link: "/solucoes/e-cpf",
+      icone: "far fa-credit-card"
+    },
+    {
+      titulo: "e-CNPJ",
+      descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+      link: "/solucoes/e-cnpj",
+      icone: "far fa-credit-card"
+    },
+    {
+      titulo: "Mídias / Hardwares",
+      descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+      link: "/solucoes/midias-hardware",
+      icone: "far fa-hdd"
+    }
+  ]
+
   constructor(
     private title: Title,
     public HttpService: HttpService,
@@ -57,12 +89,13 @@ export class HomeComponent implements OnInit {
               body: 'Em breve entraremos em contato!!',
               config: {
                 closeOnClick: true,
-                timeout: 5000,
+                timeout: 3000,
                 showProgressBar: true
               }
             });
             observer.complete();
-          }, 5000);
+          }, 3000);
+          form.reset();
         },
         (error) => {
           console.log(error);

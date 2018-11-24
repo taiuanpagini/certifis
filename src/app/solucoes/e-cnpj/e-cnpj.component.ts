@@ -12,41 +12,46 @@ export class ECnpjComponent implements OnInit {
 
   arSolucoes = [
     {
-      id: 1,
-      nome: "e-CNPJ A1 | Arquivo",
-      validade: "1 ano",
+      id: 0,
+      tipo: "e-CNPJ",
+      nome: "A1 | Arquivo",
+      validade: "1",
       valor: "189,00",
       parcela: "10",
       valorParcela: "18,90"
     },
     {
-      id: 2,
-      nome: "e-CNPJ A2 | Cartão",
-      validade: "2 anos",
+      id: 1,
+      tipo: "e-CNPJ",
+      nome: "A2 | Cartão",
+      validade: "2",
       valor: "295,00",
       parcela: "10",
       valorParcela: "29,50"
     },
     {
-      id: 3,
-      nome: "e-CNPJ A2 | Token",
-      validade: "2 anos",
+      id: 2,
+      tipo: "e-CNPJ",
+      nome: "A2 | Token",
+      validade: "2",
       valor: "429,00",
       parcela: "10",
       valorParcela: "42,90"
     },
     {
-      id: 4,
-      nome: "e-CNPJ A3 | Cartão",
-      validade: "3 anos",
+      id: 3,
+      tipo: "e-CNPJ",
+      nome: "A3 | Cartão",
+      validade: "3",
       valor: "335,00",
       parcela: "10",
       valorParcela: "33,50"
     },
     {
-      id: 5,
-      nome: "e-CNPJ A3 | Token",
-      validade: "3 anos",
+      id: 4,
+      tipo: "e-CNPJ",
+      nome: "A3 | Token",
+      validade: "3",
       valor: "509,00",
       parcela: "10",
       valorParcela: "50,90"
@@ -64,7 +69,7 @@ export class ECnpjComponent implements OnInit {
     this.title.setTitle('Certifis Certificação Digital - Conheça nossas soluções');
     $(".loader").fadeOut("slow");
     $(".loaders").delay(300).fadeOut("slow");
-    this.idSolucao = 1;
+    this.idSolucao = 0;
   }
 
   getSolucao(id) {

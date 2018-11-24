@@ -46,6 +46,10 @@ a {
     }
 }
 
+small {
+    font-size: 100%;
+}
+
 header {
     position: relative;
     z-index: 9999;
@@ -82,6 +86,7 @@ header {
 
                     ul.submenu {
                         display: block;
+
                         @include transitionNormal;
                     }
                 }
@@ -114,6 +119,7 @@ header {
                     background: #FFFFFF;
                     box-shadow: 0px 0px 4px #999999;
                     border-radius: 10px;
+
                     li {
                         width: 100%;
                         float: left;
@@ -241,8 +247,10 @@ main {
                 color: $azul-menu;
             }
         }
+
         &.btn-parceiro {
             margin-top: 80px;
+
             &:hover {
                 background: transparent;
             }
@@ -385,6 +393,7 @@ main {
                 margin: 0 auto;
                 display: table;
             }
+
             p.description {
                 font-weight: 300;
                 margin-bottom: 70px;
@@ -783,6 +792,7 @@ main {
                     }
                 }
             }
+
             .contacts {
                 margin-top: 40px;
 
@@ -806,11 +816,13 @@ main {
                 }
             }
         }
+
         &.solucoes {
             .img-certificado {
                 padding: 20px;
                 box-sizing: border-box;
             }
+
             .certificado {
                 width: 100%;
                 float: left;
@@ -820,45 +832,55 @@ main {
                 margin-bottom: 10px;
                 padding: 10px;
                 cursor: pointer;
-                @include transitionNormal();
+
+                @include transitionNormal;
+
                 span {
                     &.validade {
                         b {}
                     }
                 }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
+
                 &:hover {
                     background: $azul-menu-hover;
                 }
             }
+
             .certificado-individual {
                 &:last-child {
                     margin-bottom: 10px;
                 }
             }
+
             .valor-validade {
                 padding: 40px 20px 0 0;
                 font-size: 18px;
                 font-weight: 400;
                 box-sizing: border-box;
+
                 b {
                     &.validade {
                         font-size: 18px;
                         font-weight: 400;
                     }
                 }
+
                 span {
                     &.valor {
                         width: 100%;
                         float: left;
                         margin-top: 50px;
+
                         b {
                             font-size: 50px;
                             color: $azul-menu-hover;
                         }
                     }
+
                     &.comprar {
                         background: $verde-whats;
                         color: $branco;
@@ -868,6 +890,74 @@ main {
                         display: inline-block;
                         cursor: pointer;
                     }
+                }
+            }
+        }
+
+        &.como-instalar {
+            .card {
+                .card-header {
+                    background: $branco;
+
+                    .btn-link {
+                        width: 100%;
+                        color: $azul-menu;
+                        text-align: left;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: $azul-menu-hover;
+                        }
+
+                        &:focus {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .collapse.show {
+                        background: $branco;
+
+                        .card-body {
+                            float: left;
+
+                            span {
+                                float: left;
+                                margin-bottom: 15px;
+
+                                a {
+                                    width: 100%;
+                                    float: left;
+                                }
+
+                                small {
+                                    width: 100%;
+                                    float: left;
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            h2 {
+                &.titulo-download {
+                    width: 100%;
+                    float: left;
+                    font-size: 15pt;
+                    margin-bottom: 10px;
+                }
+            }
+
+            form {
+                width: 100%;
+                float: left;
+
+                .form-group {
+                    padding-right: 0;
                 }
             }
         }
@@ -921,9 +1011,12 @@ footer {
 
                 &.links-uteis {
                     margin-top: 0;
+
                     a {
                         color: #666666;
-                        @include transitionNormal();
+
+                        @include transitionNormal;
+
                         &:hover {
                             color: $azul-menu;
                         }

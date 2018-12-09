@@ -16,9 +16,9 @@ export class ECnpjComponent implements OnInit {
       tipo: "e-CNPJ",
       nome: "A1 | Arquivo",
       validade: "1",
-      valor: "189,00",
+      valor: "235,00",
       parcela: "10",
-      valorParcela: "18,90"
+      valorParcela: "23,50"
     },
     {
       id: 1,

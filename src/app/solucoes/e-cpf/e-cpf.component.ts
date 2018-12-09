@@ -16,9 +16,9 @@ export class ECpfComponent implements OnInit {
       tipo: "e-CPF",
       nome: "A1 | Arquivo",
       validade: "1",
-      valor: "120,00",
+      valor: "160,00",
       parcela: "10",
-      valorParcela: "12,00"
+      valorParcela: "16,00"
     },
     {
       id: 1,
@@ -43,9 +43,9 @@ export class ECpfComponent implements OnInit {
       tipo: "e-CPF",
       nome: "A3 | Cartão",
       validade: "3",
-      valor: "235,00",
+      valor: "290,00",
       parcela: "10",
-      valorParcela: "23,50"
+      valorParcela: "29,00"
     },
     {
       id: 4,

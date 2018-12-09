@@ -37,13 +37,13 @@ export class HomeComponent implements OnInit {
   arSolucoes = [
     {
       titulo: "e-CPF",
-      descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+      descricao: "O e-CPF é um documento criado para facilitar o relacionamento entre a Receita Federal do Brasil e contribuintes brasileiros. Este documento eletrônico é utilizado para garantir a autenticidade e assegurar informações dos remetentes e destinatários de dados e documentos que são repassados pela internet.",
       link: "/solucoes/e-cpf",
       icone: "far fa-credit-card"
     },
     {
       titulo: "e-CNPJ",
-      descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+      descricao: "O e-CNPJ é uma versão digital do seu CNPJ, é um documento eletrônico em formato de certificado. Ele quem garante integridade e autenticidade das transações realizadas na internet por pessoas jurídicas.",
       link: "/solucoes/e-cnpj",
       icone: "far fa-credit-card"
     },

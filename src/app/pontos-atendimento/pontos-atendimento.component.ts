@@ -31,9 +31,6 @@ export class PontosAtendimentoComponent implements OnInit {
         },
         {
           nome: "e-CNPJ"
-        },
-        {
-          nome: "A1 e A3"
         }
       ],
       imagens: [
@@ -75,9 +72,6 @@ export class PontosAtendimentoComponent implements OnInit {
         },
         {
           nome: "e-CNPJ"
-        },
-        {
-          nome: "A1 e A3"
         }
       ],
       imagens: [

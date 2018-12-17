@@ -20,17 +20,34 @@ export class HomeComponent implements OnInit {
     Assunto: "Newsletter Via Site"
   };
 
-  //public sliderOptions: any = {items: 3, dots: false, nav: true, margin: 120, loop: true, responsive:{ 0:{ items: 1, margin: 60 }, 600:{ items: 2, margin: 20 }, 767:{ items: 2, margin: 40 }, 991:{ items: 2, margin: 120 }, 1200:{ items: 3 }}};
-  public sliderOptions: any = {items: 1, dots: false, nav: true, margin: 120, loop: true, responsive:{ 0:{ items: 1, margin: 60 }, 600:{ items: 1, margin: 20 }, 767:{ items: 1, margin: 40 }, 991:{ items: 1, margin: 120 }, 1200:{ items: 1 }}};
+  //public sliderOptions: any = {items: 3, dots: false, nav: true, loop: true, responsive:{ 0:{ items: 1, margin: 60 }, 600:{ items: 2, margin: 20 }, 767:{ items: 2, margin: 40 }, 991:{ items: 2 }, 1200:{ items: 3 }}};
+  public sliderOptions: any = {items: 3, dots: false, nav: true, loop: true, responsive:{ 0:{ items: 1, margin: 60 }, 600:{ items: 2, margin: 20 }, 767:{ items: 3, margin: 40 }, 991:{ items: 3 }, 1200:{ items: 3 }}};
 
   arParceiros = [
     {
+      link: "#",
       alt: "J & L Contabilidade",
-      url: "/assets/images/jlcontabilidade.png"
+      img: "/assets/images/jlcontabilidade.png"
     },
     {
+      link: "#",
       alt: "Exime Contabilidade",
-      url: "/assets/images/eximecontabilidade.png"
+      img: "/assets/images/eximecontabilidade.png"
+    },
+    {
+      link: "#",
+      alt: "Soldi Corretora de Seguros",
+      img: "/assets/images/soldi.png"
+    },
+    {
+      link: "#",
+      alt: "Crescere Consultoria",
+      img: "/assets/images/crescere.png"
+    },
+    {
+      link: "#",
+      alt: "Cezar e Ávila Advogados",
+      img: "/assets/images/cezaravila.png"
     }
   ]
 
@@ -49,7 +66,7 @@ export class HomeComponent implements OnInit {
     },
     {
       titulo: "Mídias / Hardwares",
-      descricao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+      descricao: "Conheça as mídias que temos disponíveis para venda.",
       link: "/solucoes/midias-hardware",
       icone: "far fa-hdd"
     }

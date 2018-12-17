@@ -21,7 +21,7 @@ import { HttpService } from './providers/http';
 import { ConnectService } from './providers/connect';
 import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
 import { Http, HttpModule } from '@angular/http';
-import {NgxMaskModule} from 'ngx-mask';
+import { NgxMaskModule } from 'ngx-mask';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({

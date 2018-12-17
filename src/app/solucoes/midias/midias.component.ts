@@ -18,7 +18,7 @@ export class MidiasComponent implements OnInit {
       valor: "40,00",
       parcela: "2",
       valorParcela: "20,00",
-      imagem: "assets/images/cartao.jpg"
+      imagem: "assets/images/cartao.png"
     },
     {
       id: 1,
@@ -36,7 +36,7 @@ export class MidiasComponent implements OnInit {
       valor: "125,00",
       parcela: "10",
       valorParcela: "12,50",
-      imagem: "assets/images/leitora.jpg"
+      imagem: "assets/images/img-solucoes.jpeg"
     }
   ]
 
